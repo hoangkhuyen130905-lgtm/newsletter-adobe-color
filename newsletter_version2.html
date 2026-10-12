@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Newsletter - Phiên bản 2 | Midnight Editorial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #25234A;
+      --secondary-color: #B8A7E8;
+      --accent-color: #F1A7A0;
+      --text-color: #29283A;
+      --light-bg-color: #F4F2F9;
+      --card-bg: #FFFFFF;
+    }
+    body { background:var(--light-bg-color); color:var(--text-color); font-family:Arial,sans-serif; }
+    .brand-mark { display:inline-grid; place-items:center; width:42px; height:42px; border-radius:50%; background:var(--accent-color); color:var(--primary-color); font-weight:800; }
+    .hero { background:var(--primary-color); color:#fff; border-radius:8px; }
+    .eyebrow { color:var(--secondary-color); letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; font-weight:700; }
+    .btn-news { background:var(--accent-color); border:2px solid var(--accent-color); color:#25234A; padding:.8rem 1.35rem; border-radius:8px; font-weight:800; }
+    .btn-news:hover { background:#F7C1BB; border-color:#F7C1BB; color:#25234A; }
+    .section-title { color:var(--primary-color); }
+    .feature-card { background:var(--card-bg); border:1px solid #DDD7EE; border-radius:8px; height:100%; }
+    .feature-icon { display:grid; place-items:center; width:48px; height:48px; background:#ECE7F8; border-radius:8px; font-size:1.4rem; }
+    .tag { display:inline-block; padding:.35rem .7rem; border:1px solid var(--secondary-color); color:var(--primary-color); font-size:.8rem; font-weight:700; }
+    footer { background:#191833; color:#F4F2F9; }
+    a { color:var(--primary-color); }
+    @media (max-width:576px) { .hero { border-radius:8px; } h1 { font-size:2rem; } }
+  </style>
+</head>
+<body>
+  <div class="container py-4 py-md-5">
+    <nav class="d-flex align-items-center justify-content-between mb-4">
+      <div class="d-flex align-items-center gap-2"><span class="brand-mark">N</span><strong class="fs-5">Nắng Journal</strong></div>
+      <span class="tag">ISSUE 10 / 2026</span>
+    </nav>
+
+    <header class="hero p-4 p-md-5 mb-4 mb-md-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-3">The monthly edit</p>
+          <h1 class="display-5 fw-bold mb-3">Làm việc sâu. Nghĩ khác biệt.</h1>
+          <p class="lead mb-4">Một tuyển tập ngắn về tư duy, công cụ và thói quen giúp bạn tập trung vào giá trị thay vì chỉ chạy theo danh sách việc cần làm.</p>
+          <a class="btn btn-news" href="#noidung">Đọc số mới <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="col-lg-5">
+          <div class="p-4 text-center rounded-3" style="background:linear-gradient(145deg,#514B83,#25234A);border:1px solid #7770A8">
+            <div class="display-1" aria-hidden="true">✦</div>
+            <p class="mb-0">Ý tưởng đáng giữ lại</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="noidung">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-2 mb-3">
+        <div><p class="eyebrow mb-1" style="color:#6B5CA5">Selected stories</p><h2 class="section-title fw-bold mb-0">Trong số này</h2></div>
+        <span class="text-secondary small">5 phút đọc</span>
+      </div>
+      <div class="row g-3 g-md-4 mb-5">
+        <div class="col-md-6">
+          <article class="feature-card p-4">
+            <div class="feature-icon mb-3" aria-hidden="true">◈</div>
+            <span class="tag">01 / Tổ chức</span>
+            <h3 class="h4 mt-3">Ít nhiễu hơn, nhiều tập trung hơn</h3>
+            <p class="mb-0">Gom các công việc tương tự vào cùng một khoảng thời gian và tắt thông báo không cần thiết khi cần tập trung.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="feature-card p-4">
+            <div class="feature-icon mb-3" aria-hidden="true">✧</div>
+            <span class="tag">02 / Tư duy</span>
+            <h3 class="h4 mt-3">Thiết kế quy trình cho chính bạn</h3>
+            <p class="mb-0">Một quy trình tốt không cần phức tạp: hãy bắt đầu từ điều đang gây cản trở và cải thiện từng bước.</p>
+          </article>
+        </div>
+      </div>
+      <section class="p-4 p-md-5 mb-5" style="background:#E7E1F5;border-left:6px solid var(--secondary-color)">
+        <div class="row align-items-center g-3">
+          <div class="col-lg-8"><h2 class="section-title fw-bold">Một góc nhìn mới mỗi tháng.</h2><p class="mb-0">Đăng ký nhận những bài viết ngắn, chọn lọc và dễ áp dụng.</p></div>
+          <div class="col-lg-4 text-lg-end"><a href="#dangky" class="btn btn-news">Theo dõi bản tin</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="p-4 text-center">
+      <strong>Nắng Journal</strong>
+      <p class="small mt-2 mb-2">Notes for thoughtful work.</p>
+      <p class="small mb-0">© 2026 Nắng Journal · <a class="text-white" href="#dangky">Unsubscribe</a></p>
+    </footer>
+  </div>
+</body>
+</html>
